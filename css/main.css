@@ -6,13 +6,20 @@
 }
 
 .section-padding {
-  padding: 1rem, 0.5rem;
+  padding: 5em 2em;
 }
 
 .section-title {
+  font-weight: 200;
+  text-transform: uppercase;
   text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 2.6rem;
+  margin-bottom: 1.5em;
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3.6rem;
+  }
 }
 
 *,
@@ -133,7 +140,7 @@ table {
     height: 100%;
   }
   .nav__logo {
-    font-size: 3.2rem;
+    font-size: 3.4rem;
   }
   .nav .hamburger {
     display: none;
@@ -174,5 +181,45 @@ table {
   }
   .header {
     background-image: url(../img/sasint-jungle-1807476_1920.jpg);
+  }
+}
+
+main .aboutus__boxes {
+  display: flex;
+  flex-direction: column;
+}
+main .aboutus__content {
+  margin-top: 1em;
+}
+main .aboutus__content-text {
+  line-height: 1.6;
+}
+main .aboutus__content-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+}
+@media (min-width: 552px) {
+  main .aboutus__content-title {
+    font-size: 2.6rem;
+  }
+}
+@media (min-width: 600px) {
+  main .aboutus .section-title {
+    font-size: 3.4rem;
+  }
+}
+@media (min-width: 768px) {
+  main .aboutus__boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+  main .aboutus__boxes .aboutus__img {
+    width: 50%;
+  }
+  main .aboutus__boxes .aboutus__content-text {
+    font-size: 1.6rem;
   }
 }/*# sourceMappingURL=main.css.map */

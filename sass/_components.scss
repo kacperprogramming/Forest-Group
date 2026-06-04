@@ -10,11 +10,17 @@ $nav-height: 80px;
 }
 
 .section-padding {
-	padding: variables.$p4, variables.$p2;
+	padding: variables.$p7 variables.$p4;
 }
 
 .section-title {
+	font-weight: 200;
+	text-transform: uppercase;
 	text-align: center;
-	font-size: 1.8rem;
-	margin-bottom: variables.$p4;
+	font-size: 2.6rem;
+	margin-bottom: variables.$p5;
+
+	@media (min-width: 768px){
+		font-size: 3.6rem;
+	}
 }

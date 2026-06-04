@@ -134,7 +134,7 @@ table {
 		}
 
 		&__logo {
-			font-size: 3.2rem;
+			font-size: 3.4rem;
 		}
 
 		.hamburger {
@@ -149,9 +149,9 @@ table {
 	align-items: center;
 	height: 380px;
 	background-image: url('../img/sasint-jungle-1807476_640.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
 
 	&__shadow {
 		position: absolute;
@@ -160,26 +160,79 @@ table {
 		width: 100%;
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.6);
-        z-index: -1;
+		z-index: -1;
 	}
 
-    &__eyebrow, &__title {
-        color: white;
-    }
+	&__eyebrow,
+	&__title {
+		color: white;
+	}
 
-    &__eyebrow {
-        font-size: 1.8rem;
-    }
+	&__eyebrow {
+		font-size: 1.8rem;
+	}
 
-    @media (min-width: 768px) {
-        &__eyebrow {
-            font-size: 2.2rem;
-        }
+	@media (min-width: 768px) {
+		&__eyebrow {
+			font-size: 2.2rem;
+		}
 
-        &__title {
-            font-size: 3.6rem;
-        }
+		&__title {
+			font-size: 3.6rem;
+		}
 
-        background-image: url(../img/sasint-jungle-1807476_1920.jpg);
-    }
+		background-image: url(../img/sasint-jungle-1807476_1920.jpg);
+	}
+}
+
+main {
+	.aboutus {
+		&__boxes {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__content {
+			margin-top: 1em;
+
+            &-text {
+                line-height: 1.6;
+            }
+
+			&-title {
+				font-size: 1.8rem;
+				margin-bottom: 0.5em;
+
+				@media (min-width: 552px) {
+					font-size: 2.6rem;
+				}
+			}
+		}
+
+		@media (min-width: 600px) {
+			.section-title {
+                font-size: 3.4rem;
+			}
+		}
+
+		@media (min-width: 768px) {
+			&__boxes {
+				display: flex;
+				flex-direction: row;
+                align-items: center;
+				justify-content: center;
+                gap: 2em;
+
+				.aboutus__img {
+					width: 50%;
+				}
+
+                .aboutus__content {
+                    &-text {
+                        font-size: 1.6rem;
+                    }
+                }
+			}
+		}
+	}
 }
