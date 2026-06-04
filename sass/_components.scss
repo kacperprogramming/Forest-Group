@@ -1,0 +1,20 @@
+@use 'variables' as variables;
+
+$nav-height: 80px;
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 2em;
+}
+
+.section-padding {
+	padding: variables.$p4, variables.$p2;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 1.8rem;
+	margin-bottom: variables.$p4;
+}
