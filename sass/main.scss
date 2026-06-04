@@ -51,7 +51,7 @@ table {
 	position: sticky;
 	top: 0;
 	width: 100%;
-	background-color: #fff;
+	background-color: colors.$pure-white;
 	z-index: 1000;
 	height: components.$nav-height;
 
@@ -63,7 +63,7 @@ table {
 	}
 
 	&__logo {
-		color: #000;
+		color: colors.$pure-black;
 		font-size: 2.8rem;
 	}
 
@@ -79,7 +79,7 @@ table {
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		background-color: #fff;
+		background-color: colors.$pure-white;
 		font-size: 2.2rem;
 		z-index: 999;
 		transform: translateX(-100%);
@@ -96,15 +96,15 @@ table {
 	}
 
 	&__link {
-		color: #000;
+		color: colors.$pure-black;
 		padding: 1em 1.5em;
 		transition:
 			background-color 0.3s,
 			color 0.3s;
 
 		&:hover {
-			background-color: #000;
-			color: #fff;
+			background-color: colors.$pure-black;
+			color: colors.$pure-white;
 		}
 	}
 
@@ -165,7 +165,7 @@ table {
 
 	&__eyebrow,
 	&__title {
-		color: white;
+		color: colors.$pure-white;
 	}
 
 	&__eyebrow {
@@ -195,9 +195,9 @@ main {
 		&__content {
 			margin-top: 1em;
 
-            &-text {
-                line-height: 1.6;
-            }
+			&-text {
+				line-height: 1.6;
+			}
 
 			&-title {
 				font-size: 1.8rem;
@@ -211,7 +211,7 @@ main {
 
 		@media (min-width: 600px) {
 			.section-title {
-                font-size: 3.4rem;
+				font-size: 3.4rem;
 			}
 		}
 
@@ -219,20 +219,69 @@ main {
 			&__boxes {
 				display: flex;
 				flex-direction: row;
-                align-items: center;
+				align-items: center;
 				justify-content: center;
-                gap: 2em;
+				gap: 2em;
 
 				.aboutus__img {
 					width: 50%;
 				}
 
-                .aboutus__content {
-                    &-text {
-                        font-size: 1.6rem;
-                    }
-                }
+				.aboutus__content {
+					&-text {
+						font-size: 1.6rem;
+					}
+				}
 			}
+		}
+	}
+
+	.hero-section {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 300px;
+		background-image: url(../img/jonpauling-girl-5785590_640.jpg);
+		background-size: cover;
+		background-position: 30px 50%;
+		z-index: 0;
+
+		&__shadow {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.6);
+			z-index: -1;
+		}
+
+		&__title {
+			position: relative;
+			font-size: 1.8rem;
+			padding: 1em 1em;
+			color: colors.$pure-white;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 60vw;
+				min-width: 100%;
+				height: 100%;
+				border: 1px solid colors.$pure-white;
+			}
+
+            @media (min-width: 490px) {
+                font-size: 2.6rem;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 4.2rem;
+            }
 		}
 	}
 }
