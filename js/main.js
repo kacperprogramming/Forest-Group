@@ -31,3 +31,13 @@ navMobileLinks.forEach(item => {
 })
 
 handleFooterYear()
+
+const users = [
+	{ name: 'Jan', age: 20 },
+	{ name: 'Anna', age: 25 },
+	{ name: 'Piotr', age: 30 },
+]
+
+const newUsers = users.map(v => v.name)
+
+console.log(newUsers);
