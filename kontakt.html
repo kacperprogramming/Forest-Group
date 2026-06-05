@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Group - Kontakt</title>
+    <meta name="description"
+        content="Masz pytania? Skontaktuj się z Forest Group i zaplanuj swoją wizytę w naszym parku. Szybka odpowiedź i pełne wsparcie dla odwiedzających." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/hamburger.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a127b0651a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="wrapper">
+            <a href="/" class="nav__logo"><i class="fa-solid fa-tree"></i> Forest</a>
+
+            <ul class="nav__links">
+                <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#aboutus" class="nav__link">O nas</a></li>
+                <li class="nav__item"><a href="index.html#offers" class="nav__link">Oferta</a></li>
+                <li class="nav__item"><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+            </ul>
+
+            <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact section-padding">
+            <div class="wrapper">
+
+                <h2 class="section-title">Skontaktujmy się</h2>
+                <p class="contact__section-info">Wypełnij formularz, a odezwiemy się do Ciebie wkrótce.</p>
+
+                <form class="contact__form">
+
+                    <div class="contact__form-group">
+                        <div class="contact__form-box">
+                            <label class="contact__form-box-label" for="name">Imię</label>
+                            <input class="contact__form-box-input" type="text" id="name">
+                        </div>
+
+                        <div class="contact__form-box">
+                            <label class="contact__form-box-label" for="surname">Nazwisko</label>
+                            <input class="contact__form-box-input" type="text" id="surname">
+                        </div>
+                    </div>
+
+                    <div class="contact__form-box">
+                        <label class="contact__form-box-label" for="email">Adres e-mail</label>
+                        <input class="contact__form-box-input" type="email" id="email">
+                    </div>
+
+                    <div class="contact__form-box">
+                        <label class="contact__form-box-label" for="message">Treść wiadomości</label>
+                        <textarea class="contact__form-box-textarea" id="message"></textarea>
+                    </div>
+
+                    <button type="submit" class="contact__form-button">Wyślij</button>
+                </form>
+
+                <h2 class="section-title map-title">Znajdziesz nas tutaj</h2>
+
+                <iframe class="contact__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.463012829421!2d19.892182182918994!3d50.08879485986897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sMcDonald&#39;s!5e0!3m2!1sen!2spl!4v1780702612474!5m2!1sen!2spl"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="wrapper">
+            <div class="footer__boxes section-padding">
+                <a href="/" class="footer__logo"><i class="fa-solid fa-tree"></i>Forest</a>
+
+                <div class="footer__sitemap">
+                    <div class="footer__sitemap-box">
+                        <h3 class="footer__sitemap-box-title">O nas</h3>
+                        <ul class="footer__sitemap-box-list">
+                            <li class="footer__sitemap-box-list-item"><a href="/">Historia</a></li>
+                            <li class="footer__sitemap-box-list-item"><a href="/">Parki</a></li>
+                            <li class="footer__sitemap-box-list-item"><a href="/">Opinie</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__sitemap-box">
+                        <h3 class="footer__sitemap-box-title">Nasza firma</h3>
+                        <ul class="footer__sitemap-box-list">
+                            <li class="footer__sitemap-box-list-item"><a href="/">Praca</a></li>
+                            <li class="footer__sitemap-box-list-item"><a href="/">Kadry</a></li>
+                            <li class="footer__sitemap-box-list-item"><a href="/">Zarząd</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__sitemap-box">
+                        <h3 class="footer__sitemap-box-title">Dokumenty</h3>
+                        <ul class="footer__sitemap-box-list">
+                            <li class="footer__sitemap-box-list-item"><a href="/">Wnioski</a></li>
+                            <li class="footer__sitemap-box-list-item"><a href="/">Rezerwacje</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="footer__info">&copy;<span class="footer__year"></span> Forest Group Company Ltd.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

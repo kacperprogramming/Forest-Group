@@ -14,7 +14,7 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 2.6rem;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.75em;
 }
 @media (min-width: 768px) {
   .section-title {
@@ -280,9 +280,6 @@ main .hero-section__title::before {
     font-size: 4.2rem;
   }
 }
-main .offers .section-title {
-  margin-bottom: 1em;
-}
 main .offers .section-info {
   text-align: center;
   margin-bottom: 2em;
@@ -457,20 +454,17 @@ main .offers__more-info a:hover::before {
   }
 }
 
-main .pricing .section-title {
-  margin-bottom: 1em;
-}
-main .pricing .section-info {
+.pricing .section-info {
   text-align: center;
   margin-bottom: 2em;
 }
-main .pricing__grid {
+.pricing__grid {
   display: flex;
   flex-direction: column;
   gap: 2em;
   align-items: center;
 }
-main .pricing__card {
+.pricing__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -481,30 +475,30 @@ main .pricing__card {
   border-radius: 10px;
   transition: transform 0.3s;
 }
-main .pricing__card .correct-option {
+.pricing__card .correct-option {
   color: #6cdb7d;
 }
-main .pricing__card .disabled-option {
+.pricing__card .disabled-option {
   color: gray;
 }
-main .pricing__card-title {
+.pricing__card-title {
   font-weight: 300;
   font-size: 1.8rem;
   margin-bottom: 0.3em;
 }
-main .pricing__card-price {
+.pricing__card-price {
   font-weight: bold;
   font-size: 2.4rem;
   margin-bottom: 0.5em;
 }
-main .pricing__card-list {
+.pricing__card-list {
   list-style-type: none;
   margin-bottom: 1em;
 }
-main .pricing__card-list li {
+.pricing__card-list li {
   padding: 0.3em 0;
 }
-main .pricing__card-button {
+.pricing__card-button {
   padding: 0.5em 1em;
   border-radius: 7px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
@@ -513,49 +507,125 @@ main .pricing__card-button {
   width: 100%;
   transition: 0.3s ease;
 }
-main .pricing__card:hover {
+.pricing__card:hover {
   transform: scale(1.04);
 }
-main .pricing__card-extras {
+.pricing__card-extras {
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
 @media (min-width: 768px) {
-  main .pricing .section-info {
+  .pricing .section-info {
     font-size: 1.8rem;
   }
-  main .pricing__grid {
+  .pricing__grid {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
     gap: 2em;
   }
-  main .pricing__card {
+  .pricing__card {
     width: 270px;
     max-width: 270px;
     flex: 0 0 270px;
     padding: 2em 0;
     transition: transform 0.3s;
   }
-  main .pricing__card-title {
+  .pricing__card-title {
     font-size: 2.2rem;
   }
-  main .pricing__card-price {
+  .pricing__card-price {
     font-size: 3.6rem;
   }
-  main .pricing__card-list {
+  .pricing__card-list {
     font-size: 1.6rem;
   }
-  main .pricing__card-button {
+  .pricing__card-button {
     width: 50%;
     transition: 0.3s ease;
   }
-  main .pricing__card-button:hover {
+  .pricing__card-button:hover {
     background-color: #f5f5f5;
   }
-  main .pricing__card:hover {
+  .pricing__card:hover {
     transform: scale(1.04);
   }
+}
+
+.contact__section-info {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+@media (min-width: 768px) {
+  .contact__section-info {
+    font-size: 1.8rem;
+  }
+}
+.contact__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact__form-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact__form-box-label {
+  font-size: 1.4rem;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+}
+.contact__form-box-input, .contact__form-box-textarea {
+  border: none;
+  padding: 0.7em;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+}
+.contact__form-box-textarea {
+  min-height: 100px;
+}
+.contact__form-button {
+  align-self: start;
+  margin-top: 2em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  min-width: 100px;
+  width: 30%;
+  border: 1px solid transparent;
+}
+@media (min-width: 768px) {
+  .contact__form-group {
+    flex-direction: row;
+    gap: 1em;
+  }
+  .contact__form-box-label {
+    font-size: 1.6rem;
+  }
+  .contact__form-button {
+    padding: 1em;
+    transition: color 0.1s, background-color 0.1s, border 0.1s;
+  }
+  .contact__form-button:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+  }
+}
+.contact .map-title {
+  margin-top: 3em;
+}
+.contact__map {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
