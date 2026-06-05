@@ -1,6 +1,7 @@
 const hamburgerButton = document.querySelector('.hamburger')
 const navMobile = document.querySelector('.nav__links')
 const navMobileLinks = document.querySelectorAll('.nav__link')
+const footerYear = document.querySelector('.footer__year')
 
 const handleHamburgerButton = () => {
 	hamburgerButton.classList.toggle('is-active')
@@ -15,6 +16,11 @@ const handleMobileLinks = () => {
 	hamburgerButton.classList.remove('is-active')
 }
 
+const handleFooterYear = () => {
+	const now = new Date()
+	footerYear.textContent = now.getFullYear()
+}
+
 hamburgerButton.addEventListener('click', () => {
 	handleHamburgerButton()
 	handleNavMobile()
@@ -23,3 +29,5 @@ hamburgerButton.addEventListener('click', () => {
 navMobileLinks.forEach(item => {
 	item.addEventListener('click', handleMobileLinks)
 })
+
+handleFooterYear()

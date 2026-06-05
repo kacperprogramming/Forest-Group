@@ -65,6 +65,11 @@ table {
   border-spacing: 0;
 }
 
+#aboutus,
+#offers {
+  scroll-margin-top: 80px;
+}
+
 .nav {
   position: sticky;
   top: 0;
@@ -234,6 +239,11 @@ main .hero-section {
   background-position: 30px 50%;
   z-index: 0;
 }
+@media (min-width: 768px) {
+  main .hero-section {
+    background-image: url(../img/jonpauling-girl-5785590_1920.jpg);
+  }
+}
 main .hero-section__shadow {
   position: absolute;
   top: 0;
@@ -386,7 +396,8 @@ main .offers__more-info a:hover::before {
     box-shadow: 0px 2px 10px 0px #54c665;
   }
   main .offers__box:nth-child(2) {
-    height: 380px;
+    padding-top: 3.2em;
+    padding-bottom: 3.2em;
   }
   main .offers__box:hover {
     transform: scale(1.04);
@@ -394,4 +405,24 @@ main .offers__more-info a:hover::before {
   main .offers__more-info {
     font-size: 1.8rem;
   }
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+.footer__boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__logo {
+  color: #000;
+  font-size: 4.2rem;
+}
+.footer__sitemap {
+  display: none;
+}
+.footer__info {
+  text-align: center;
+  padding: 2em;
 }/*# sourceMappingURL=main.css.map */
